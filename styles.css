@@ -1,13 +1,15 @@
-html {
+/* html {
   height: 100vh;
   width: 100vw;
-}
+} */
 
 body {
   background-color: #c4e4e7;
-  display: grid;
   height: 100vh;
   width: 100vw;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 .container {
   background-color: #ffffff;
@@ -19,6 +21,7 @@ body {
   grid-template-rows: 1fr;
   width: 50rem;
   height: 30rem;
+  margin: auto;
 }
 .title {
   text-align: center;
@@ -278,5 +281,9 @@ body {
   }
   .title {
     font-size: 4rem;
+  }
+  .b {
+    font-weight: bolder;
+    font-size: 2rem;
   }
 }

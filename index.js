@@ -1,5 +1,6 @@
 function totalTip(tipPercent, bill) {
-  document.querySelector(".totalTip").value = "$ " + (bill * tipPercent) / 100;
+  document.querySelector(".totalTip").value =
+    "$ " + Math.round((bill * tipPercent) / 100);
 }
 for (let i = 0; i < document.querySelectorAll(".b").length; i++) {
   document
@@ -16,7 +17,7 @@ for (let i = 0; i < document.querySelectorAll(".b").length; i++) {
 }
 function tipPerPerson(numberOfPerson, tipPercent, bill) {
   document.querySelector(".tipPerPerson").value =
-    "$ " + (bill * tipPercent) / (100 * numberOfPerson);
+    "$ " + Math.round((bill * tipPercent) / (100 * numberOfPerson));
 }
 
 function reset() {
